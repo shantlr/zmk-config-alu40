@@ -21,7 +21,7 @@
             // | LGUI  | LCTL | LALT | LGUI | LOWR |     SPACE    |  RAIS | RSFT | UARW | DARW  |  RARW |
 
             bindings = <
-                &gresc     &kp SQT    &kp COMMA &kp DOT   &kp P  &kp Y      &kp F      &kp G  &kp C      &kp R    &kp L     &gresc
+                &gresc     &kp SQT    &kp COMMA &kp DOT   &kp P  &kp Y      &kp F      &kp G  &kp C      &kp R    &kp L     &tilde_esc
                 &kp TAB    &kp A      &kp O     &kp E     &kp U  &kp I      &kp D      &kp H  &kp T      &kp N    &kp S     &kp BSPC
                 &kp LSHFT  &kp SEMI   &kp Q     &kp J     &kp K  &kp X      &kp B      &kp M  &kp W      &kp V    &kp Z     &mt RSHFT RET
                 &kp LGUI   &kp LCTRL  &kp LALT  &kp LGUI  &mo 1  &kp ENTER  &kp SPACE  &mo 2  &kp RSHFT  &kp UP   &kp DOWN  &kp RIGHT
@@ -65,11 +65,11 @@
     };
 
     behaviors {
-        gresc: grave_escape {
+        tilde_esc: tilde_escape {
             compatible = "zmk,behavior-mod-morph";
-            label = "GRAVE_ESCAPE";
+            label = "TILDE_ESCAPE";
             #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp GRAVE>;
+            bindings = <&kp ESC>, <&kp TILDE>;
             mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
         };
     };
