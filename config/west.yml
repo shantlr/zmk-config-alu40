@@ -2,9 +2,12 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/zmkfirmware
+    - name: origin
+      url-base: https://github.com/shantlr
   projects:
     - name: alu40-module
-      url: https://github.com/polarityworks/zmk-config-alu40
+      remote: origin
+      url: zmk-config-alu40
       revision: main
       clone-depth: 1
     - name: zmk
