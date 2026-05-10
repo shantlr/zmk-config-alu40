@@ -75,14 +75,4 @@
             status = "reserved";
         };
     };
-
-    behaviors {
-        tilde_esc: tilde_escape {
-            compatible = "zmk,behavior-mod-morph";
-            label = "TILDE_ESCAPE";
-            #binding-cells = <0>;
-            bindings = <&kp ESC>, <&kp TILDE>;
-            mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-        };
-    };
 };
