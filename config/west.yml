@@ -10,6 +10,9 @@ manifest:
     - name: zmk
       remote: zmkfirmware
       # revision: main
+      # see https://github.com/nickcoutsos/keymap-editor/discussions/347
+      # https://zmk.dev/blog/2025/12/09/zephyr-4-1#switching-to-the-previous-release
+      # => check build.yml aswell
       revision: v0.3
       import: app/west.yml
   self:
